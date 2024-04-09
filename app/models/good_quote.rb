@@ -4,6 +4,6 @@ class GoodQuote < ApplicationRecord
   private
 
   def react_to_new_record
-    ReactToNewRecord.perform_later(id)
+    ReactToNewRecordJob.perform_later(id)
   end
 end
