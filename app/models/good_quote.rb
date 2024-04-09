@@ -1,0 +1,2 @@
+class GoodQuote < ApplicationRecord
+end

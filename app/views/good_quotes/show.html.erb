@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @good_quote %>
+
+<div>
+  <%= link_to "Edit this good quote", edit_good_quote_path(@good_quote) %> |
+  <%= link_to "Back to good quotes", good_quotes_path %>
+
+  <%= button_to "Destroy this good quote", @good_quote, method: :delete %>
+</div>

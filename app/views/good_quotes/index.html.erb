@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Good quotes</h1>
+
+<div id="good_quotes">
+  <% @good_quotes.each do |good_quote| %>
+    <%= render good_quote %>
+    <p>
+      <%= link_to "Show this good quote", good_quote %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New good quote", new_good_quote_path %>
